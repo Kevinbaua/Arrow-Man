@@ -336,7 +336,7 @@ function draw() {
       if(enemy_array[k].lifespan<=0){
         kills++;
         if(enemy_array[k].head_hit==1) headshots++;
-        for(let i=0; i<enemy_pos.length-1;i++){ //removing position of enemy from pos array
+        for(let i=0; i<enemy_pos.length ;i++){ //removing position of enemy from pos array
           if(enemy_pos[i]== enemy_array[k].position){
             enemy_pos.splice(i,1);
           }
